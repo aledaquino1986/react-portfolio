@@ -1,0 +1,33 @@
+svg {
+  height: 572px;
+}
+
+#me {
+  animation:  me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+   animation: clock 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+
+/*Animation*/
+
+@keyframes me {
+  to {
+transform: rotateZ(-1.5deg);
+  } from {
+transform: rotateZ(1.5deg)
+  }
+}
+
+@keyframes clock {
+  to {
+transform: rotateZ(360deg);
+  } from {
+transform: rotateZ(0deg);
+  }
+}

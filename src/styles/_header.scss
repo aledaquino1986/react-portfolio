@@ -1,0 +1,48 @@
+header {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 10rem;
+  flex-direction: row;
+}
+
+.header-icon {
+  margin-right: 1rem;
+}
+
+.header-sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+}
+
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.link {
+  transition: 0.5s ease all;
+}
+
+.link:hover {
+  font-size: 3rem;
+}

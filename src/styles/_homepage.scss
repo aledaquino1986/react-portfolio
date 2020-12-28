@@ -1,0 +1,51 @@
+main {
+  min-height: 80vh;
+}
+
+.intro {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 6rem;
+    padding-top: 2rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+    padding: 2rem 0rem;
+  }
+
+  p {
+    padding-top: 2rem;
+    color: $gray-text;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro-social {
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  a {
+    margin-right: 3rem;
+    
+  }
+
+  
+}
+
+.intro-text,
+.intro-image {
+  flex: 1 1 40rem;
+}
