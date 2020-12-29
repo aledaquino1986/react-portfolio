@@ -1,0 +1,71 @@
+.form-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.7);
+  min-width: 70vw;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+}
+
+.contact-me {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="button"] {
+  margin-top: 2rem;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: rgb(58, 58, 172);
+  color: rgb(214, 207, 207);
+  transition: 0.5s;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+}
+
+button[type="button"]:hover {
+  color: rgb(58, 58, 172);
+  background: rgb(214, 207, 207);
+}
+
+button[type="button"]:active {
+  transform: translateY(5%);
+}
