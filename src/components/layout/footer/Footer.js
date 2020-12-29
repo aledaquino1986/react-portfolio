@@ -12,13 +12,21 @@ function Footer() {
       <ul className="footer-link">
         <li>
           <a href="#">
-            <FontAwesomeIcon icon={faLinkedin} className="footer-icon" />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="footer-icon"
+              id="linkedin"
+            />
           </a>
         </li>
 
         <li>
           <a href="#">
-            <FontAwesomeIcon icon={faGithub} className="footer-icon" />
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="footer-icon"
+              id="github"
+            />
           </a>
         </li>
       </ul>

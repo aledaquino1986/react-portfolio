@@ -39,13 +39,38 @@ main {
   padding-bottom: 1rem;
   a {
     margin-right: 3rem;
-    
   }
-
-  
 }
 
 .intro-text,
 .intro-image {
   flex: 1 1 40rem;
+}
+
+#linkedin {
+  transition: 0.5s;
+}
+
+#linkedin:hover {
+  color: #0072b1;
+
+  animation: icon 0.2s ease infinite alternate;
+}
+
+#github {
+  transition: 0.5s;
+}
+
+#github:hover {
+  color: rgb(203, 160, 81);
+  animation: icon 0.2s ease infinite alternate;
+}
+
+@keyframes icon {
+  to {
+    transform: rotateZ(-3deg);
+  }
+  from {
+    transform: rotateZ(3deg);
+  }
 }

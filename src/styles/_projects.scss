@@ -1,0 +1,23 @@
+.projects-section {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.project {
+  border: 10px red solid;
+}
+
+.project img {
+  width: 75%;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}

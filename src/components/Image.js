@@ -1,10 +1,11 @@
 import React from "react";
-import splash from "../image/splash.svg";
+import splash from "../images/splash.svg";
 
 function Image() {
   return (
     <div className="intro-images">
       <svg
+        id="me-image"
         width="799"
         height="690"
         viewBox="0 0 799 690"

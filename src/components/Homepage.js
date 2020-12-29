@@ -23,11 +23,21 @@ function Index() {
           </p>
           <div className="intro-social">
             <Link to="https://www.linkedin.com">
-              <FontAwesomeIcon icon={faLinkedin} alt="linkedin icon" size="2x" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                alt="linkedin icon"
+                size="2x"
+                id="linkedin"
+              />
             </Link>
 
             <Link to="https://www.github.com">
-              <FontAwesomeIcon icon={faGithub} alt="github icon" size="2x" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                alt="github icon"
+                size="2x"
+                id="github"
+              />
             </Link>
           </div>
         </div>
