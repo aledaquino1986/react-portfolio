@@ -19,7 +19,8 @@
 
 .contact-me {
   text-align: center;
-  margin: 0 auto;
+
+  font-size: 4rem;
 }
 
 .contact-form {
@@ -35,11 +36,35 @@
   justify-content: center;
 }
 
+label {
+  padding: 0.5rem;
+}
+
+.error-message {
+  font-size: 2rem;
+  color: rgb(225, 37, 37);
+  transition: 1.5s;
+}
+
+.success-message {
+  font-size: 2rem;
+  color: rgb(57, 140, 36);
+  transition: 1.5s;
+}
+
+.success {
+  border: 2px green solid;
+}
+
+.error {
+  border: 2px red solid;
+}
+
 textarea {
   resize: none;
 }
 
-button[type="button"] {
+button[type="submit"] {
   margin-top: 2rem;
   width: 100%;
   border-bottom-right-radius: 20px;
@@ -61,11 +86,39 @@ textarea {
   outline: none;
 }
 
-button[type="button"]:hover {
+.text-email-input {
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+button[type="submit"]:hover {
   color: rgb(58, 58, 172);
   background: rgb(214, 207, 207);
 }
 
-button[type="button"]:active {
+button[type="submit"]:active {
   transform: translateY(5%);
+}
+
+.background2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 754px) {
+  .background2 {
+    height: 137%;
+    top: -20%;
+    transform: rotate(90deg);
+    right: -12%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background2 {
+    display: none;
+  }
 }
