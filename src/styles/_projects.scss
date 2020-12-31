@@ -9,13 +9,18 @@
 }
 
 .project {
-  border: 10px red solid;
+  border: 5px #154353 solid;
+
+  background-image: url("../images/splash.svg");
+  background-size: 1000px;
 }
 
 .project img {
   width: 75%;
   margin: 30px;
   transition: 0.5s;
+  border: 10px solid black;
+  border-radius: 10px;
 }
 
 .project img:hover {

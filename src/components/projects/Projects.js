@@ -1,52 +1,64 @@
 import React from "react";
 import Seo from "../Seo";
+import Project from "./Project";
 import techStore from "../../images/portfolio/the-tech-store.PNG";
 import calculator from "../../images/portfolio/calculator.PNG";
+import rockPaperScissors from "../../images/portfolio/rock-paper-scissors.PNG";
+import portfolio from "../../images/portfolio/portfolio.PNG";
+import Pepsi from "../../images/portfolio/pepsi.PNG";
 
 function Projects() {
   return (
     <>
       <Seo title="Homepage" />
       <section className="projects-section">
-        <div className="project tech-store">
-          <h2>The tech Store - HTML/CSS</h2>
-          <img src={techStore} alt="The tech store" className="project-image" />
-        </div>
+        <Project
+          className="tech-store"
+          title="The Tech Store"
+          technology="HTML/CSS"
+          image={techStore}
+          altName="The Tech Store"
+        />
 
-        <div className="project calculator">
-          <h2>Calculator - Javascript</h2>
-          <img src={calculator} alt="" className="project-image" />
-        </div>
+        <Project
+          className="calculator"
+          title="Calculator"
+          technology="Javascript"
+          image={calculator}
+          altName="Calculator"
+        />
 
-        <div className="project tech-store">
-          <h2>The tech Store - HTML/CSS</h2>
-          <img src={techStore} alt="The tech store" className="project-image" />
-        </div>
+        <Project
+          className="rock-paper-scissors"
+          title="Rock Paper Scissors"
+          technology="HTML/CSS/JS"
+          image={rockPaperScissors}
+          altName="Rock Paper Scissors"
+        />
 
-        <div className="project calculator">
-          <h2>Calculator - Javascript</h2>
-          <img src={calculator} alt="" className="project-image" />
-        </div>
+        <Project
+          className="portfolio"
+          title="Portfolio"
+          technology="React"
+          image={portfolio}
+          altName="Portfolio"
+        />
 
-        <div className="project tech-store">
-          <h2>The tech Store - HTML/CSS</h2>
-          <img src={techStore} alt="The tech store" className="project-image" />
-        </div>
+        <Project
+          className="pepsi"
+          title="Pepsi"
+          technology="HTML/CSS/JS"
+          image={Pepsi}
+          altName="Pepsi"
+        />
 
-        <div className="project calculator">
-          <h2>Calculator - Javascript</h2>
-          <img src={calculator} alt="" className="project-image" />
-        </div>
-
-        <div className="project tech-store">
-          <h2>The tech Store - HTML/CSS</h2>
-          <img src={techStore} alt="The tech store" className="project-image" />
-        </div>
-
-        <div className="project calculator">
-          <h2>Calculator - Javascript</h2>
-          <img src={calculator} alt="" className="project-image" />
-        </div>
+        <Project
+          className="calculator"
+          title="Calculator"
+          technology="Javascript"
+          image={calculator}
+          altName="Calculator"
+        />
       </section>
     </>
   );
