@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,10 +8,12 @@ function Header() {
     <header>
       <nav>
         <div className="logo">
-          <h1>
-            <FontAwesomeIcon icon={faCode} className="header-icon" />
-            Alejandro Neme
-          </h1>
+          <Link exact to="/">
+            <h1>
+              <FontAwesomeIcon icon={faCode} className="header-icon" />
+              Alejandro Neme
+            </h1>
+          </Link>
         </div>
 
         <ul className="header-sections">
@@ -23,11 +25,16 @@ function Header() {
           </li>
           <li>
             {" "}
-            <NavLink to="/projects" className="link"> Projects</NavLink>
+            <NavLink to="/projects" className="link">
+              {" "}
+              Projects
+            </NavLink>
           </li>
           <li>
             {" "}
-            <NavLink to="contact" className="link">Contact</NavLink>
+            <NavLink to="contact" className="link">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -1,9 +1,7 @@
 import React from "react";
-import Seo from "./Seo";
+import Seo from "./seo/Seo";
 import Image from "./Image";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Index() {
   return (
@@ -11,35 +9,30 @@ function Index() {
       <Seo title="Homepage" />
       <section className="intro">
         <div className="intro-text">
-          <h2>Alejandro Neme</h2>
+          <span className="salutation">
+            Hi, <span className="i-am"> I'm</span>{" "}
+          </span>
+          <h2>
+            Alejandro <span className="surname">Neme</span>
+          </h2>
           <h3>
-            Full stack <br /> web developer
+            {" "}
+            <span className="stack">Full-stack </span> web developer
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil
-            et excepturi eligendi magni provident, ex mollitia sunt soluta a
-            eveniet quo rem voluptatum minima dolore, commodi illum non
-            architecto!
-          </p>
-          <div className="intro-social">
-            <Link to="https://www.linkedin.com">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                alt="linkedin icon"
-                size="2x"
-                id="linkedin"
-              />
-            </Link>
-
-            <Link to="https://www.github.com">
-              <FontAwesomeIcon
-                icon={faGithub}
-                alt="github icon"
-                size="2x"
-                id="github"
-              />
-            </Link>
+          <div className="skills">
+            <p>My preferred technologies are: </p>
+            <p>
+              Front-end:{" "}
+              <span className="techs">HTML, CSS, Javascript, React</span>
+            </p>
+            <p>
+              Back-end: <span className="techs">Node, Express</span>
+            </p>
           </div>
+
+          <Link to="/projects" className="link active see-more">
+            See my projects
+          </Link>
         </div>
 
         <Image />

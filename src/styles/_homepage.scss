@@ -10,14 +10,41 @@ main {
   justify-content: space-between;
   align-items: center;
 
+  .salutation {
+    font-size: 2.5rem;
+  }
+
+  .skills {
+    text-align: left;
+    margin: 2rem 0rem;
+  }
+
+  .skills p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .i-am,
+  .techs {
+    color: rgb(228, 152, 10);
+  }
+
+  .surname {
+    color: #6993c4;
+    font-size: 5.5rem;
+  }
+
+  .stack {
+    color: #6993c4;
+  }
+
   h2 {
     font-size: $header2;
-    padding-top: 2rem;
   }
 
   h3 {
     font-size: 4rem;
-    padding: 2rem 0rem;
+    padding: 0;
   }
 
   p {
@@ -45,25 +72,6 @@ main {
 .intro-text,
 .intro-image {
   flex: 1 1 40rem;
-}
-
-#linkedin {
-  transition: 0.5s;
-}
-
-#linkedin:hover {
-  color: #0072b1;
-
-  animation: icon 0.2s ease infinite alternate;
-}
-
-#github {
-  transition: 0.5s;
-}
-
-#github:hover {
-  color: rgb(203, 160, 81);
-  animation: icon 0.2s ease infinite alternate;
 }
 
 @keyframes icon {

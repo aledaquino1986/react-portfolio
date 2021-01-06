@@ -1,5 +1,5 @@
 import React from "react";
-import Seo from "../Seo";
+import Seo from "../seo/Seo";
 import Project from "./Project";
 import techStore from "../../images/portfolio/the-tech-store.PNG";
 import calculator from "../../images/portfolio/calculator.PNG";
@@ -18,6 +18,7 @@ function Projects() {
           technology="HTML/CSS"
           image={techStore}
           altName="The Tech Store"
+          href="https://aledaquino1986.github.io/landing-page/"
         />
 
         <Project
@@ -26,6 +27,7 @@ function Projects() {
           technology="Javascript"
           image={calculator}
           altName="Calculator"
+          href="https://aledaquino1986.github.io/calculator/"
         />
 
         <Project
@@ -34,6 +36,7 @@ function Projects() {
           technology="HTML/CSS/JS"
           image={rockPaperScissors}
           altName="Rock Paper Scissors"
+          href="https://aledaquino1986.github.io/rockpaperscissors/"
         />
 
         <Project
@@ -50,14 +53,7 @@ function Projects() {
           technology="HTML/CSS/JS"
           image={Pepsi}
           altName="Pepsi"
-        />
-
-        <Project
-          className="calculator"
-          title="Calculator"
-          technology="Javascript"
-          image={calculator}
-          altName="Calculator"
+          href="https://aledaquino1986.github.io/pepsi-landing-page"
         />
       </section>
     </>

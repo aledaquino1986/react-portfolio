@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Seo from "./Seo";
+import Seo from "./seo/Seo";
 import splash from "../images/splash.svg";
 import axios from "axios";
 
