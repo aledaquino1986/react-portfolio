@@ -1,3 +1,39 @@
+.projects-section {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  text-align: center;
+  margin: 2rem;
+}
+
+.project {
+  border: 5px #154353 solid;
+  background-image: url("../images/splash.svg");
+  background-size: 1000px;
+}
+
+.project img {
+  width: 75%;
+  margin: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.project img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: grayscale(1) blur(3px);
+          filter: grayscale(1) blur(3px);
+  transform: scale(1.1);
+}
+
 header {
   width: 95%;
   margin: 0 0 0 auto;
@@ -111,11 +147,11 @@ label,
 input,
 a,
 p {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -134,6 +170,28 @@ ul {
 a {
   text-decoration: none;
   color: #f8f5f5;
+}
+
+#linkedin {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#linkedin:hover {
+  color: #0072b1;
+  -webkit-animation: icon 0.2s ease infinite alternate;
+          animation: icon 0.2s ease infinite alternate;
+}
+
+#github {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#github:hover {
+  color: #cba051;
+  -webkit-animation: icon 0.2s ease infinite alternate;
+          animation: icon 0.2s ease infinite alternate;
 }
 
 footer {
@@ -196,14 +254,41 @@ main {
           align-items: center;
 }
 
+.intro .salutation {
+  font-size: 2.5rem;
+}
+
+.intro .skills {
+  text-align: left;
+  margin: 2rem 0rem;
+}
+
+.intro .skills p {
+  padding: 0;
+  margin: 0;
+}
+
+.intro .i-am,
+.intro .techs {
+  color: #e4980a;
+}
+
+.intro .surname {
+  color: #6993c4;
+  font-size: 5.5rem;
+}
+
+.intro .stack {
+  color: #6993c4;
+}
+
 .intro h2 {
-  font-size: 6rem;
-  padding-top: 2rem;
+  font-size: 5rem;
 }
 
 .intro h3 {
   font-size: 4rem;
-  padding: 2rem 0rem;
+  padding: 0;
 }
 
 .intro p {
@@ -233,28 +318,6 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-}
-
-#linkedin {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#linkedin:hover {
-  color: #0072b1;
-  -webkit-animation: icon 0.2s ease infinite alternate;
-          animation: icon 0.2s ease infinite alternate;
-}
-
-#github {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#github:hover {
-  color: #cba051;
-  -webkit-animation: icon 0.2s ease infinite alternate;
-          animation: icon 0.2s ease infinite alternate;
 }
 
 @-webkit-keyframes icon {
@@ -342,6 +405,160 @@ main {
   }
 }
 
+.form-page {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.7);
+  min-width: 70vw;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(255, 255, 255, 0.64);
+}
+
+.contact-me {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding: 0.5rem;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  color: #e12525;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.success-message {
+  font-size: 2rem;
+  color: #398c24;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.success {
+  border: 2px green solid;
+}
+
+.error {
+  border: 2px red solid;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  width: 100%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: #3a3aac;
+  color: #d6cfcf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.text-email-input {
+  padding: 0.5rem;
+  width: 30rem;
+}
+
+button[type="submit"]:hover {
+  color: #3a3aac;
+  background: #d6cfcf;
+}
+
+button[type="submit"]:active {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.background2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 754px) {
+  .background2 {
+    height: 137%;
+    top: -20%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -12%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background2 {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 50%;
@@ -398,6 +615,18 @@ main {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     right: -12%;
+  }
+  .projects-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  textarea {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=app.css.map */
