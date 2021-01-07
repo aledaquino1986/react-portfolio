@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +8,7 @@ function Header() {
     <header>
       <nav>
         <div className="logo">
-          <Link exact to="/">
+          <Link to="/">
             <h1>
               <FontAwesomeIcon icon={faCode} className="header-icon" />
               Alejandro Neme
@@ -18,7 +18,7 @@ function Header() {
 
         <ul className="header-sections">
           <li>
-            <NavLink exact to="/" className="link">
+            <NavLink to="/" className="link">
               {" "}
               Home
             </NavLink>
