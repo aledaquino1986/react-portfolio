@@ -18,14 +18,14 @@ function Header() {
 
         <ul className="header-sections">
           <li>
-            <NavLink to="/" className="link">
+            <NavLink exact to="/" className="link">
               {" "}
               Home
             </NavLink>
           </li>
           <li>
             {" "}
-            <NavLink to="/projects" className="link">
+            <NavLink exact to="/projects" className="link">
               {" "}
               Projects
             </NavLink>

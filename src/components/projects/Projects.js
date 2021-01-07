@@ -13,6 +13,15 @@ function Projects() {
       <Seo title="Homepage" />
       <section className="projects-section">
         <Project
+          className="portfolio"
+          title="Portfolio"
+          technology="React"
+          image={portfolio}
+          altName="Portfolio"
+          href="https://aleaquino.netlify.app/"
+        />
+
+        <Project
           className="tech-store"
           title="The Tech Store"
           technology="HTML/CSS"
@@ -37,14 +46,6 @@ function Projects() {
           image={rockPaperScissors}
           altName="Rock Paper Scissors"
           href="https://aledaquino1986.github.io/rockpaperscissors/"
-        />
-
-        <Project
-          className="portfolio"
-          title="Portfolio"
-          technology="React"
-          image={portfolio}
-          altName="Portfolio"
         />
 
         <Project
