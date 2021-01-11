@@ -70,7 +70,7 @@ $gray-text: #f8f5f5;
     height: 137%;
     top: -20%;
     transform: rotate(90deg);
-    right: -12%;
+    right: -2%;
   }
 
   .projects-section {
@@ -83,7 +83,13 @@ $gray-text: #f8f5f5;
   }
 }
 
-@media screen and (max-width: 379px) {
+@media only screen and (max-width: 754px) and (min-width: 721px) {
+  .background {
+    right: -8%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .background {
     right: 0%;
   }
