@@ -1,6 +1,6 @@
 import React from "react";
-import Seo from "./seo/Seo";
-import Image from "./Image";
+import Seo from "../../components/seo/Seo";
+import Image from "../../components/Image";
 import { Link } from "react-router-dom";
 
 function Index() {

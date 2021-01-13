@@ -1,17 +1,26 @@
 import React from "react";
-import Seo from "../seo/Seo";
+import Seo from "../../components/seo/Seo";
 import Project from "./Project";
 import techStore from "../../images/portfolio/the-tech-store.PNG";
 import calculator from "../../images/portfolio/calculator.PNG";
 import rockPaperScissors from "../../images/portfolio/rock-paper-scissors.PNG";
 import portfolio from "../../images/portfolio/portfolio.PNG";
 import Pepsi from "../../images/portfolio/pepsi.PNG";
+import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
 
 function Projects() {
   return (
     <>
       <Seo title="Homepage" />
       <section className="projects-section">
+        <Project
+          className="imperio-gamer"
+          title="Imperio Gamer"
+          technology="Node/Express"
+          image={imperioGamer}
+          altname="Imperio gamer"
+          href="https://imperio-gamer.herokuapp.com/"
+        />
         <Project
           className="portfolio"
           title="Portfolio"

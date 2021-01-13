@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Seo from "./seo/Seo";
-import splash from "../images/splash.svg";
+import Seo from "../../components/seo/Seo";
+import splash from "../../images/splash.svg";
+import Forminput from "../../components/formInput/Forminput";
 import axios from "axios";
 
 function Contact() {
@@ -30,11 +31,8 @@ function Contact() {
   const submitHandler = e => {
     e.preventDefault();
     const form = e.target;
-    console.log(textError);
-    console.log(textError.message);
 
     if (textError.canSend === false) {
-      console.log(textError.canSend);
       handleServerResponse(false, "Please add a message", form);
       return;
     }
@@ -111,37 +109,35 @@ function Contact() {
               {serverState.status.msg}
             </p>
           )}
-          <div className="form-section">
-            <label htmlFor="name">Name</label>
+          <Forminput
+            errorHandler={changeNameHandler}
+            onFocus={() => setError(null)}
+            label="Name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Lionel"
+            nameOfClass={`text-email-input ${!error ? "success" : "error"}`}
+          >
             {error ? <div className="error-message">{error}</div> : null}
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Lionel"
-              className={`text-email-input ${!error ? "success" : "error"}`}
-              onBlur={changeNameHandler}
-              onFocus={() => setError(null)}
-            />
-          </div>
-          <div className="form-section">
-            <label htmlFor="email">Email</label>
+          </Forminput>
+
+          <Forminput
+            errorHandler={changeEmailHandler}
+            onFocus={() => setEmailError(null)}
+            label="Email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="lionel-messi@gmail.com"
+            nameOfClass={`text-email-input ${
+              !emailError ? "success" : "error"
+            }`}
+          >
             {emailError ? (
               <div className="error-message">{emailError}</div>
             ) : null}
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="lionelmessi@gmail.com"
-              className={`text-email-input ${
-                !emailError ? "success" : "error"
-              }`}
-              onBlur={changeEmailHandler}
-              onFocus={() => setEmailError(null)}
-            />
-          </div>
+          </Forminput>
 
           <div className="form-section">
             <label htmlFor="message">Message</label>
