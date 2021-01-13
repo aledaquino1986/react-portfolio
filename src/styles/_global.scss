@@ -48,21 +48,32 @@ a {
   color: $gray-text;
 }
 
-#linkedin {
+.fa-linkedin {
   transition: 0.5s;
 }
 
-#linkedin:hover {
+.fa-linkedin:hover {
   color: #0072b1;
 
   animation: icon 0.2s ease infinite alternate;
 }
 
-#github {
+.fa-github {
   transition: 0.5s;
+  color: white;
+  background-image: radial-gradient(at center, black 60%, transparent 60%);
 }
 
-#github:hover {
-  color: rgb(203, 160, 81);
+.fa-github:hover {
+  color: black;
+  animation: icon 0.2s ease infinite alternate;
+  background-image: radial-gradient(at center, white 60%, transparent 60%);
+}
+
+.fa-desktop {
+  color: white;
+}
+
+.fa-desktop:hover {
   animation: icon 0.2s ease infinite alternate;
 }

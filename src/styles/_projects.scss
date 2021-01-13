@@ -12,24 +12,43 @@
   border: 5px #154353 solid;
 
   background-image: url("../images/splash.svg");
-  background-size: 1000px;
 }
 
 .project img {
-  width: 80%;
+  width: 90%;
   margin: 20px;
-  transition: 0.5s;
+
+  transition: 0.5s ease-in-out;
   border: 10px solid black;
   border-radius: 10px;
 }
 
 .project img:hover {
-  transform: scale(1.1);
   filter: grayscale(1) blur(3px);
-  transform: scale(1.1);
 }
 
 .see-more {
   margin-bottom: 3rem;
   display: inline-block;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.view-project-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  z-index: 10;
+
+  .fa-github,
+  .fa-desktop {
+    margin: 10px;
+  }
 }

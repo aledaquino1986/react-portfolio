@@ -19,7 +19,8 @@ function Projects() {
           technology="Node/Express"
           image={imperioGamer}
           altname="Imperio gamer"
-          href="https://imperio-gamer.herokuapp.com/"
+          website="https://imperio-gamer.herokuapp.com/"
+          githubCode="https://github.com/aledaquino1986/grupo_3_imperioGamer"
         />
         <Project
           className="portfolio"
@@ -27,7 +28,8 @@ function Projects() {
           technology="React"
           image={portfolio}
           altName="Portfolio"
-          href="https://aleaquino.netlify.app/"
+          website="https://aleaquino.netlify.app/"
+          githubCode="https://github.com/aledaquino1986/react-portfolio"
         />
 
         <Project
@@ -36,7 +38,8 @@ function Projects() {
           technology="HTML/CSS"
           image={techStore}
           altName="The Tech Store"
-          href="https://aledaquino1986.github.io/landing-page/"
+          website="https://aledaquino1986.github.io/landing-page/"
+          githubCode="https://github.com/aledaquino1986/landing-page"
         />
 
         <Project
@@ -45,7 +48,8 @@ function Projects() {
           technology="Javascript"
           image={calculator}
           altName="Calculator"
-          href="https://aledaquino1986.github.io/calculator/"
+          website="https://aledaquino1986.github.io/calculator/"
+          githubCode="https://github.com/aledaquino1986/calculator"
         />
 
         <Project
@@ -54,7 +58,8 @@ function Projects() {
           technology="HTML/CSS/JS"
           image={rockPaperScissors}
           altName="Rock Paper Scissors"
-          href="https://aledaquino1986.github.io/rockpaperscissors/"
+          website="https://aledaquino1986.github.io/rockpaperscissors/"
+          githubCode="https://github.com/aledaquino1986/rockpaperscissors"
         />
 
         <Project
@@ -63,7 +68,8 @@ function Projects() {
           technology="HTML/CSS/JS"
           image={Pepsi}
           altName="Pepsi"
-          href="https://aledaquino1986.github.io/pepsi-landing-page"
+          website="https://aledaquino1986.github.io/pepsi-landing-page"
+          githubCode="https://github.com/aledaquino1986/pepsi-landing-page"
         />
       </section>
     </>
