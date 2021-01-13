@@ -16,11 +16,7 @@ function Project({
     setIsMouseOver(true);
   };
   return (
-    <div
-      className={`project ${className}`}
-
-      //
-    >
+    <div className={`project ${className}`}>
       <h3>
         {title} - {technology}
       </h3>
@@ -33,7 +29,12 @@ function Project({
         {/* <a href={href} rel="noreferrer" target="_blank">
           
         </a> */}
-        <img src={image} alt={altName} className="project-image" />
+        <img
+          src={image}
+          alt={altName}
+          className="project-image"
+          style={isMouseOver ? { filter: "grayscale(1) blur(3px)" } : null}
+        />
         {isMouseOver ? (
           <Button website={website} githubCode={githubCode} />
         ) : null}

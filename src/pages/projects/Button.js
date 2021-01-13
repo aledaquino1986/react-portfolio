@@ -1,6 +1,6 @@
 import React from "react";
 import IconLogo from "../../components/icon-logos/IconLogo";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 
 function Button({ website, githubCode }) {
