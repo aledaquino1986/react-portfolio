@@ -13,7 +13,7 @@ function Index() {
             Hi, <span className="i-am"> I'm</span>{" "}
           </span>
           <h2>
-            Alejandro <span className="surname">Neme</span>
+            Alejandro <span className="surname">Aquino</span>
           </h2>
           <h3>
             {" "}

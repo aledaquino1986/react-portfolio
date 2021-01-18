@@ -11,7 +11,7 @@ function Header() {
           <Link to="/">
             <h1>
               <FontAwesomeIcon icon={faCode} className="header-icon" />
-              Alejandro Neme
+              Alejandro Aquino
             </h1>
           </Link>
         </div>
