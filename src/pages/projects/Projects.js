@@ -7,6 +7,7 @@ import rockPaperScissors from "../../images/portfolio/rock-paper-scissors.PNG";
 import portfolio from "../../images/portfolio/portfolio.PNG";
 import Pepsi from "../../images/portfolio/pepsi.PNG";
 import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
+import chillhop from "../../images/portfolio/chillhop.PNG";
 
 function Projects() {
   return (
@@ -40,6 +41,16 @@ function Projects() {
           altName="The Tech Store"
           website="https://aledaquino1986.github.io/landing-page/"
           githubCode="https://github.com/aledaquino1986/landing-page"
+        />
+
+        <Project
+          className="music-player"
+          title="Chillhop Sounds"
+          technology="React"
+          image={chillhop}
+          altName="Chillhop"
+          website="https://chillhop-sounds.netlify.app/"
+          githubCode="https://github.com/aledaquino1986/music-app-vol-2"
         />
 
         <Project
