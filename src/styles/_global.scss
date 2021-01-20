@@ -72,9 +72,20 @@ a {
 }
 
 .fa-desktop {
-  color: white;
+  color: black;
+}
+
+.svg-inline--fa.fa-desktop.fa-w-18.fa-2x {
+  position: absolute;
+  bottom: -2px;
+}
+
+.fa-circle:hover {
+  animation: icon 0.2s ease infinite alternate;
+  color: black;
 }
 
 .fa-desktop:hover {
   animation: icon 0.2s ease infinite alternate;
+  color: white;
 }

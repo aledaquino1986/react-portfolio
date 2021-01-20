@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Icon from "./Icon";
 
 function Project({
   className,
@@ -8,7 +8,8 @@ function Project({
   title,
   technology,
   website,
-  githubCode
+  githubCode,
+  description
 }) {
   const [isMouseOver, setIsMouseOver] = useState(false);
 
@@ -26,17 +27,15 @@ function Project({
         onMouseEnter={handleImageMouseOver}
         onMouseLeave={() => setIsMouseOver(false)}
       >
-        {/* <a href={href} rel="noreferrer" target="_blank">
-          
-        </a> */}
         <img
           src={image}
           alt={altName}
           className="project-image"
           style={isMouseOver ? { filter: "grayscale(1) blur(3px)" } : null}
         />
+
         {isMouseOver ? (
-          <Button website={website} githubCode={githubCode} />
+          <Icon website={website} githubCode={githubCode} />
         ) : null}
       </div>
     </div>

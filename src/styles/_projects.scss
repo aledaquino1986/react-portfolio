@@ -50,5 +50,14 @@
   .fa-github,
   .fa-desktop {
     margin: 10px;
+    z-index: 1;
   }
+
+  .fa-layers {
+    margin: 10px;
+  }
+}
+
+.description {
+  transition: 0.9s;
 }

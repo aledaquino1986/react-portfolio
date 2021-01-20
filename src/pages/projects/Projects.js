@@ -8,6 +8,7 @@ import portfolio from "../../images/portfolio/portfolio.PNG";
 import Pepsi from "../../images/portfolio/pepsi.PNG";
 import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
 import chillhop from "../../images/portfolio/chillhop.PNG";
+import digitalWatch from "../../images/portfolio/digitalwatch.PNG";
 
 function Projects() {
   return (
@@ -16,7 +17,7 @@ function Projects() {
       <section className="projects-section">
         <Project
           className="imperio-gamer"
-          title="Imperio Gamer"
+          title="Imperio Gamer Ecommerce"
           technology="Node/Express"
           image={imperioGamer}
           altname="Imperio gamer"
@@ -74,8 +75,18 @@ function Projects() {
         />
 
         <Project
+          className="digital-watch"
+          title="Digital watch"
+          technology="HTML/CSS/JS"
+          image={digitalWatch}
+          altName="Digital watch preview"
+          website="https://aledaquino1986.github.io/digital-watch/"
+          githubCode="https://github.com/aledaquino1986/digital-watch"
+        />
+
+        <Project
           className="pepsi"
-          title="Pepsi"
+          title="Pepsi dynamic landing page"
           technology="HTML/CSS/JS"
           image={Pepsi}
           altName="Pepsi"
