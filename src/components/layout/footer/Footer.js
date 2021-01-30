@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer>
-      <h4>Ale Neme &#169; {date}</h4>
+      <h4>Ale Aquino &#169; {date}</h4>
 
       <ul className="footer-link">
         <li>
