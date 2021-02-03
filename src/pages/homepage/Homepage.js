@@ -10,14 +10,15 @@ function Index() {
       <section className="intro">
         <div className="intro-text">
           <span className="salutation">
-            Hi, <span className="i-am"> I'm</span>{" "}
+            Hi, <span className="i-am salutation"> I'm</span>{" "}
           </span>
-          <h2>
+          <h2 className="name-title">
             Alejandro <span className="surname">Aquino</span>
           </h2>
           <h3>
             {" "}
-            <span className="stack">Full-stack </span> web developer
+            <span className="stack">Full-stack </span>{" "}
+            <span className="profession">web developer</span>
           </h3>
           <div className="skills">
             <p>My preferred technologies are: </p>
