@@ -23,6 +23,7 @@ function Projects() {
           altname="Imperio gamer"
           website="https://imperio-gamer.herokuapp.com/"
           githubCode="https://github.com/aledaquino1986/grupo_3_imperioGamer"
+          description="Ecommerce page created with NodeJs, express, EJS, MYSQL, using the MVC pattern."
         />
         <Project
           className="portfolio"
@@ -32,6 +33,7 @@ function Projects() {
           altName="Portfolio"
           website="https://aleaquino.netlify.app/"
           githubCode="https://github.com/aledaquino1986/react-portfolio"
+          description="This site! Created with React (hooks, router) and SASS for styles."
         />
 
         <Project
@@ -42,6 +44,7 @@ function Projects() {
           altName="The Tech Store"
           website="https://aledaquino1986.github.io/landing-page/"
           githubCode="https://github.com/aledaquino1986/landing-page"
+          description="Videogame store landing page created with HTML and CSS"
         />
 
         <Project
@@ -52,6 +55,7 @@ function Projects() {
           altName="Chillhop"
           website="https://chillhop-sounds.netlify.app/"
           githubCode="https://github.com/aledaquino1986/music-app-vol-2"
+          description="Lofi Hip hop player created with React (hooks)."
         />
 
         <Project
@@ -62,6 +66,7 @@ function Projects() {
           altName="Calculator"
           website="https://aledaquino1986.github.io/calculator/"
           githubCode="https://github.com/aledaquino1986/calculator"
+          description="HTML, CSS and Javascript calculator."
         />
 
         <Project
@@ -72,6 +77,7 @@ function Projects() {
           altName="Rock Paper Scissors"
           website="https://aledaquino1986.github.io/rockpaperscissors/"
           githubCode="https://github.com/aledaquino1986/rockpaperscissors"
+          description="Rock, paper, scissors game created with HTML, CSS and Vanilla CSS"
         />
 
         <Project
@@ -82,6 +88,7 @@ function Projects() {
           altName="Digital watch preview"
           website="https://aledaquino1986.github.io/digital-watch/"
           githubCode="https://github.com/aledaquino1986/digital-watch"
+          description="Digital watch created with HTML, CSS and Vanilla CSS"
         />
 
         <Project
@@ -92,6 +99,7 @@ function Projects() {
           altName="Pepsi"
           website="https://aledaquino1986.github.io/pepsi-landing-page"
           githubCode="https://github.com/aledaquino1986/pepsi-landing-page"
+          description="Mobile Landing Page created with HTML, CSS, Vanilla JS"
         />
       </section>
     </>

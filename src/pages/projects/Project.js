@@ -18,10 +18,11 @@ function Project({
   };
   return (
     <div className={`project ${className}`}>
-      <h3>
-        {title} - {technology}
-      </h3>
-
+      <a href={website}>
+        <h3>
+          {title} - {technology}
+        </h3>
+      </a>
       <div
         className="container"
         onMouseEnter={handleImageMouseOver}
@@ -35,7 +36,13 @@ function Project({
         />
 
         {isMouseOver ? (
-          <Icon website={website} githubCode={githubCode} />
+          <>
+            <Icon
+              website={website}
+              githubCode={githubCode}
+              description={description}
+            />
+          </>
         ) : null}
       </div>
     </div>

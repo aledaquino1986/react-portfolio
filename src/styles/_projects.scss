@@ -8,6 +8,13 @@
   text-align: center;
 }
 
+.project-icons-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .project {
   border: 5px #154353 solid;
 
@@ -42,9 +49,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 25%;
-  left: 42%;
   z-index: 10;
 
   .fa-github,
@@ -60,4 +64,22 @@
 
 .description {
   transition: 0.9s;
+}
+
+.project-description-span {
+  mark {
+    background-color: #154353;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-icons-container {
+    width: 100%;
+
+    mark {
+      font-size: 1.7rem;
+      padding: 3px;
+    }
+  }
 }

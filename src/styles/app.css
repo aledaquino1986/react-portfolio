@@ -1,37 +1,99 @@
 .projects-section {
   min-height: 90vh;
   width: 90%;
-  margin: auto;
+  margin: 2rem auto 2rem auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   grid-gap: 10px;
   text-align: center;
-  margin: 2rem;
+}
+
+.project-icons-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .project {
   border: 5px #154353 solid;
   background-image: url("../images/splash.svg");
-  background-size: 1000px;
 }
 
 .project img {
-  width: 75%;
-  margin: 30px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  width: 90%;
+  margin: 20px;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   border: 10px solid black;
   border-radius: 10px;
 }
 
 .project img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
   -webkit-filter: grayscale(1) blur(3px);
           filter: grayscale(1) blur(3px);
-  transform: scale(1.1);
+}
+
+.see-more {
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.view-project-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.view-project-btns .fa-github,
+.view-project-btns .fa-desktop {
+  margin: 10px;
+  z-index: 1;
+}
+
+.view-project-btns .fa-layers {
+  margin: 10px;
+}
+
+.description {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.project-description-span mark {
+  background-color: #154353;
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .project-icons-container {
+    width: 100%;
+  }
+  .project-icons-container mark {
+    font-size: 1.7rem;
+    padding: 3px;
+  }
 }
 
 header {
@@ -135,6 +197,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: #000;
   color: #dad4d4;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1 {
@@ -172,26 +236,52 @@ a {
   color: #f8f5f5;
 }
 
-#linkedin {
+.fa-linkedin {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-image: radial-gradient(at center, #0072b1 60%, transparent 60%);
 }
 
-#linkedin:hover {
+.fa-linkedin:hover {
   color: #0072b1;
+  background-image: radial-gradient(at center, white 60.8%, transparent 60%);
   -webkit-animation: icon 0.2s ease infinite alternate;
           animation: icon 0.2s ease infinite alternate;
 }
 
-#github {
+.fa-github {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: white;
+  background-image: radial-gradient(at center, black 60%, transparent 60%);
 }
 
-#github:hover {
-  color: #cba051;
+.fa-github:hover {
+  color: black;
   -webkit-animation: icon 0.2s ease infinite alternate;
           animation: icon 0.2s ease infinite alternate;
+  background-image: radial-gradient(at center, white 60%, transparent 60%);
+}
+
+.fa-desktop {
+  color: black;
+}
+
+.svg-inline--fa.fa-desktop.fa-w-18.fa-2x {
+  position: absolute;
+  bottom: -2px;
+}
+
+.fa-circle:hover {
+  -webkit-animation: icon 0.2s ease infinite alternate;
+          animation: icon 0.2s ease infinite alternate;
+  color: black;
+}
+
+.fa-desktop:hover {
+  -webkit-animation: icon 0.2s ease infinite alternate;
+          animation: icon 0.2s ease infinite alternate;
+  color: white;
 }
 
 footer {
@@ -252,15 +342,21 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .intro .salutation {
   font-size: 2.5rem;
+  -webkit-animation: salutationAnimation 1s ease-in;
+          animation: salutationAnimation 1s ease-in;
 }
 
 .intro .skills {
   text-align: left;
   margin: 2rem 0rem;
+  -webkit-animation: moveInRight 2s ease-in;
+          animation: moveInRight 2s ease-in;
 }
 
 .intro .skills p {
@@ -280,15 +376,21 @@ main {
 
 .intro .stack {
   color: #6993c4;
+  -webkit-animation: salutationAnimation 1.5s ease-in;
+          animation: salutationAnimation 1.5s ease-in;
 }
 
-.intro h2 {
+.intro .name-title {
   font-size: 5rem;
+  -webkit-animation: moveInLeft 1.5s ease-in;
+          animation: moveInLeft 1.5s ease-in;
 }
 
 .intro h3 {
   font-size: 4rem;
   padding: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .intro p {
@@ -320,6 +422,13 @@ main {
           flex: 1 1 40rem;
 }
 
+.see-more {
+  -webkit-animation: moveInBottom 1.5s ease-in 0.75s;
+          animation: moveInBottom 1.5s ease-in 0.75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
 @-webkit-keyframes icon {
   to {
     -webkit-transform: rotateZ(-3deg);
@@ -339,6 +448,134 @@ main {
   from {
     -webkit-transform: rotateZ(3deg);
             transform: rotateZ(3deg);
+  }
+}
+
+@-webkit-keyframes salutationAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes salutationAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -559,6 +796,18 @@ button[type="submit"]:active {
   }
 }
 
+.error-page {
+  min-height: 80vh;
+}
+
+.error-page h2 {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 50%;
@@ -614,7 +863,7 @@ button[type="submit"]:active {
     top: -20%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    right: -12%;
+    right: -2%;
   }
   .projects-section {
     display: -webkit-box;
@@ -627,6 +876,18 @@ button[type="submit"]:active {
   }
   textarea {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 754px) and (min-width: 721px) {
+  .background {
+    right: -8%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    right: 0%;
   }
 }
 /*# sourceMappingURL=app.css.map */
