@@ -9,12 +9,35 @@ import Pepsi from "../../images/portfolio/pepsi.PNG";
 import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
 import chillhop from "../../images/portfolio/chillhop.PNG";
 import digitalWatch from "../../images/portfolio/digitalwatch.PNG";
+import hackernews from "../../images/portfolio/hackernews.PNG";
 
 function Projects() {
   return (
     <>
       <Seo title="Homepage" />
       <section className="projects-section">
+        <Project
+          className="hackernews"
+          title="Soft Hacker News clone"
+          technology="React - classes"
+          image={hackernews}
+          altName="Hacker news"
+          website="https://hackernews-project.netlify.app/"
+          githubCode="https://github.com/aledaquino1986/hacker-news"
+          description="(Soft) Hacker news clone"
+        />
+
+        <Project
+          className="music-player"
+          title="Chillhop Sounds"
+          technology="React - Hooks"
+          image={chillhop}
+          altName="Chillhop"
+          website="https://chillhop-sounds.netlify.app/"
+          githubCode="https://github.com/aledaquino1986/music-app-vol-2"
+          description="Lofi Hip hop player created with React (hooks)."
+        />
+
         <Project
           className="imperio-gamer"
           title="Imperio Gamer Ecommerce"
@@ -25,10 +48,11 @@ function Projects() {
           githubCode="https://github.com/aledaquino1986/grupo_3_imperioGamer"
           description="Ecommerce page created with NodeJs, express, EJS, MYSQL, using the MVC pattern."
         />
+
         <Project
           className="portfolio"
           title="Portfolio"
-          technology="React"
+          technology="React - Hooks"
           image={portfolio}
           altName="Portfolio"
           website="https://aleaquino.netlify.app/"
@@ -45,17 +69,6 @@ function Projects() {
           website="https://aledaquino1986.github.io/landing-page/"
           githubCode="https://github.com/aledaquino1986/landing-page"
           description="Videogame store landing page created with HTML and CSS"
-        />
-
-        <Project
-          className="music-player"
-          title="Chillhop Sounds"
-          technology="React"
-          image={chillhop}
-          altName="Chillhop"
-          website="https://chillhop-sounds.netlify.app/"
-          githubCode="https://github.com/aledaquino1986/music-app-vol-2"
-          description="Lofi Hip hop player created with React (hooks)."
         />
 
         <Project

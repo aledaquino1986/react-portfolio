@@ -29,6 +29,7 @@ function Project({
         onMouseLeave={() => setIsMouseOver(false)}
       >
         <img
+          style={{ border: "20px solid black" }}
           src={image}
           alt={altName}
           className="project-image"
