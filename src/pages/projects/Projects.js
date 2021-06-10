@@ -10,6 +10,7 @@ import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
 import chillhop from "../../images/portfolio/chillhop.PNG";
 import digitalWatch from "../../images/portfolio/digitalwatch.PNG";
 import hackernews from "../../images/portfolio/hackernews.PNG";
+import cv from "../../images/portfolio/cv.PNG";
 
 function Projects() {
   return (
@@ -25,6 +26,17 @@ function Projects() {
           website="https://hackernews-project.netlify.app/"
           githubCode="https://github.com/aledaquino1986/hacker-news"
           description="(Soft) Hacker news clone"
+        />
+
+        <Project
+          className="CV"
+          title="CV"
+          technology="HTML/CSS/React"
+          image={cv}
+          altName="Resume"
+          website="https://ale-resume.netlify.app/"
+          githubCode="https://github.com/aledaquino1986/react-cv"
+          description="Resume created with first with plain HTML and CSS and then refactored as a React project"
         />
 
         <Project
@@ -80,17 +92,6 @@ function Projects() {
           website="https://aledaquino1986.github.io/calculator/"
           githubCode="https://github.com/aledaquino1986/calculator"
           description="HTML, CSS and Javascript calculator."
-        />
-
-        <Project
-          className="rock-paper-scissors"
-          title="Rock Paper Scissors"
-          technology="HTML/CSS/JS"
-          image={rockPaperScissors}
-          altName="Rock Paper Scissors"
-          website="https://aledaquino1986.github.io/rockpaperscissors/"
-          githubCode="https://github.com/aledaquino1986/rockpaperscissors"
-          description="Rock, paper, scissors game created with HTML, CSS and Vanilla CSS"
         />
 
         <Project
