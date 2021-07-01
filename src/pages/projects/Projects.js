@@ -12,6 +12,7 @@ import digitalWatch from "../../images/portfolio/digitalwatch.PNG";
 import hackernews from "../../images/portfolio/hackernews.PNG";
 import cv from "../../images/portfolio/cv.PNG";
 
+
 function Projects() {
   return (
     <>
@@ -36,7 +37,7 @@ function Projects() {
           altName="Resume"
           website="https://ale-resume.netlify.app/"
           githubCode="https://github.com/aledaquino1986/react-cv"
-          description="Resume created with first with plain HTML and CSS and then refactored as a React project"
+          description="Resume created first with plain HTML and CSS and then refactored as a React project"
         />
 
         <Project
