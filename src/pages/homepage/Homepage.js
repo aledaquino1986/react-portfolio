@@ -21,13 +21,12 @@ function Index() {
             <span className="profession">web developer</span>
           </h3>
           <div className="skills">
-            <p>My preferred technologies are: </p>
             <p>
               Front-end:{" "}
               <span className="techs">HTML, CSS, Javascript, React</span>
             </p>
             <p>
-              Back-end: <span className="techs">Node, Express</span>
+              Back-end: <span className="techs">Node, Express, MySQL</span>
             </p>
           </div>
 

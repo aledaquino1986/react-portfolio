@@ -3,15 +3,13 @@ import Seo from "../../components/seo/Seo";
 import Project from "./Project";
 import techStore from "../../images/portfolio/the-tech-store.PNG";
 import calculator from "../../images/portfolio/calculator.PNG";
-import rockPaperScissors from "../../images/portfolio/rock-paper-scissors.PNG";
 import portfolio from "../../images/portfolio/portfolio.PNG";
-import Pepsi from "../../images/portfolio/pepsi.PNG";
+
 import imperioGamer from "../../images/portfolio/imperiogamer.PNG";
 import chillhop from "../../images/portfolio/chillhop.PNG";
 import digitalWatch from "../../images/portfolio/digitalwatch.PNG";
 import hackernews from "../../images/portfolio/hackernews.PNG";
 import cv from "../../images/portfolio/cv.PNG";
-
 
 function Projects() {
   return (
@@ -104,17 +102,6 @@ function Projects() {
           website="https://aledaquino1986.github.io/digital-watch/"
           githubCode="https://github.com/aledaquino1986/digital-watch"
           description="Digital watch created with HTML, CSS and Vanilla CSS"
-        />
-
-        <Project
-          className="pepsi"
-          title="Pepsi dynamic landing page"
-          technology="HTML/CSS/JS"
-          image={Pepsi}
-          altName="Pepsi"
-          website="https://aledaquino1986.github.io/pepsi-landing-page"
-          githubCode="https://github.com/aledaquino1986/pepsi-landing-page"
-          description="Mobile Landing Page created with HTML, CSS, Vanilla JS"
         />
       </section>
     </>
